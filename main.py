@@ -46,7 +46,6 @@ def main():
             session_duration = int(columns[2])
             happiness_rating = int(columns[3])
 
-
             # Update stats based on the algorithm
             if algorithm in stats:
                 stats[algorithm]['total_happiness'] += happiness_rating
@@ -59,10 +58,16 @@ def main():
     # TODO: Calculate averages for each algorithm
     # For each algorithm in the stats dictionary:
     #   - Calculate avg_happiness = total_happiness / session_count
+        for rating in stats:
+            avg_happiness = 'total_happiness' / 'session_count'
+            avg_duration = 'total_duration' / 'session_count'
+
+
     #   - Calculate avg_duration = total_duration / session_count
     #   - Store these back into the stats dictionary under 'avg_happiness' and 'avg_duration'
 
     # TODO: Determine the algorithm with the highest average happiness rating
+        for 
     # Initialize variables to keep track of the highest average happiness and the corresponding algorithm
     # Loop through stats to compare avg_happiness values
 

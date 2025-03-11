@@ -1,7 +1,7 @@
 # Euphoria User Engagement Analysis Report
 
-**Author:** [Your Name]  
-**Date:** [Submission Date]
+**Author:** William Nix  
+**Date:** 03/11/2025
 
 ---
 
