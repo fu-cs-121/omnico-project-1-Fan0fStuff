@@ -58,9 +58,13 @@ def main():
     # TODO: Calculate averages for each algorithm
     # For each algorithm in the stats dictionary:
     #   - Calculate avg_happiness = total_happiness / session_count
-        for rating in stats:
-            avg_happiness = 'total_happiness' / 'session_count'
-            avg_duration = 'total_duration' / 'session_count'
+        for algorithm, data in stats.items():
+            if data['session count'] > 0:
+                data['avg_happiness'] = data['total_happiness'] / data['session count']
+                data['avg_duration'] = data['total_duration'] / data['session count']
+            else:
+                print("invalid numbers")
+            
 
 
     #   - Calculate avg_duration = total_duration / session_count
