@@ -90,7 +90,48 @@ def main():
     # Loop through stats to compare avg_duration values
 
     # TODO: Print the report
-    
+    print("Euphoria User Engagement Analysis Report")
+    print("----------------------------------------")
+
+    print("\nAverage Happiness Rating per Algorithm:")
+    for algorithm, data in stats.items():
+        print(f"- {algorithm}: {data['avg_happpiness']}:.2f")
+    print("\nTotal Number of Sessions per Algorithm:")
+    for algorithm, data in stats.items():
+        print(f"- {algorithm}: {data['avg_duration']}:.2f")
+    print("\nAverage Session Duration per Algorithm:")
+    for algorithm, data in stats.items():
+        print(f"- {algorithm}: {data['session_count']}:.2f")
+    print("\nHighest Average Happiness Rating:")
+    for algorithm, data in stats.items():
+        print(f"- {algorithm}: {data['avg_duration']}")
+    print("\nHighest Average Happiness Rating:")
+    print(f"- {happiest_algorithm} with an average happiness rating of {highest_avg_happiness:.2f}")
+    print("\nLongest Average Session Duration:")
+    for algorithm, data in stats.items():
+        print(f"- {algorithm}: {data('avg_duration')}:.2f")
+
+
+    # - JoyStream: 8.50
+    # - SerenityFlow: 7.00
+    # - DeepPulse: 5.00
+
+    # Total Number of Sessions per Algorithm:
+    # - JoyStream: 4
+    # - SerenityFlow: 3
+    # - DeepPulse: 3
+
+    # Average Session Duration per Algorithm:
+    # - JoyStream: 37.50 minutes
+    # - SerenityFlow: 30.00 minutes
+    # - DeepPulse: 45.00 minutes
+
+    # Highest Average Happiness Rating:
+    # - JoyStream with an average happiness rating of 8.50
+
+    # Longest Average Session Duration:
+    # - DeepPulse with an average session duration of 45.00 minutes
+
     # Use print statements to display the results in a formatted way
     # Follow the structure provided in the example output
 
