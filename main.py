@@ -102,9 +102,6 @@ def main():
     for algorithm, data in stats.items():
         print(f"- {algorithm}: {data['session_count']} minutes")
     print("\nHighest Average Happiness Rating:")
-    for algorithm, data in stats.items():
-        print(f"- {algorithm}: {data['avg_duration']}")
-    print("\nHighest Average Happiness Rating:")
     print(f"- {happiest_algorithm} with an average happiness rating of {highest_avg_happiness}")
     print("\nLongest Average Session Duration:")
     for algorithm, data in stats.items():
