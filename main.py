@@ -64,22 +64,33 @@ def main():
                 data['avg_duration'] = data['total_duration'] / data['session count']
             else:
                 print("invalid numbers")
-            
-
-
-    #   - Calculate avg_duration = total_duration / session_count
-    #   - Store these back into the stats dictionary under 'avg_happiness' and 'avg_duration'
+    #  V - Calculate avg_duration = total_duration / session_count 
+    #  V - Store these back into the stats dictionary under 'avg_happiness' and 'avg_duration' 
 
     # TODO: Determine the algorithm with the highest average happiness rating
-        for 
+        #determine the algorithm with the highest average happiness rating
+        highest_avg_happiness = 0
+        happiest_algorithm = ""
+        for algorithm, data in stats.items():
+            if data['avg_happiness'] > highest_avg_happiness:
+                highest_avg_happiness = data['avg_happiness']
+                happiest_algorithm = algorithm 
     # Initialize variables to keep track of the highest average happiness and the corresponding algorithm
     # Loop through stats to compare avg_happiness values
 
     # TODO: Determine the algorithm with the longest average session duration
+        # determine the algorithm with the longest average session duration
+        longest_sesh_duration = 0
+        longest_algorithm = ""
+        for algorithm, data in stats.items():
+            if data['avg_duration'] > longest_sesh_duration:
+                longest_sesh_duration = data['avg_duration']
+                longest_algorithm = algorithm
     # Initialize variables to keep track of the longest average duration and the corresponding algorithm
     # Loop through stats to compare avg_duration values
 
     # TODO: Print the report
+    
     # Use print statements to display the results in a formatted way
     # Follow the structure provided in the example output
 
