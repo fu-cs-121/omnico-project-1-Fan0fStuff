@@ -59,9 +59,9 @@ def main():
     # For each algorithm in the stats dictionary:
     #   - Calculate avg_happiness = total_happiness / session_count
         for algorithm, data in stats.items():
-            if data['session count'] > 0:
-                data['avg_happiness'] = data['total_happiness'] / data['session count']
-                data['avg_duration'] = data['total_duration'] / data['session count']
+            if data['session_count'] > 0:
+                data['avg_happiness'] = data['total_happiness'] // data['session_count']
+                data['avg_duration'] = data['total_duration'] // data['session_count']
             else:
                 print("invalid numbers")
     #  V - Calculate avg_duration = total_duration / session_count 
@@ -79,7 +79,6 @@ def main():
     # Loop through stats to compare avg_happiness values
 
     # TODO: Determine the algorithm with the longest average session duration
-        # determine the algorithm with the longest average session duration
         longest_sesh_duration = 0
         longest_algorithm = ""
         for algorithm, data in stats.items():
@@ -88,28 +87,30 @@ def main():
                 longest_algorithm = algorithm
     # Initialize variables to keep track of the longest average duration and the corresponding algorithm
     # Loop through stats to compare avg_duration values
-
+        
     # TODO: Print the report
     print("Euphoria User Engagement Analysis Report")
     print("----------------------------------------")
 
     print("\nAverage Happiness Rating per Algorithm:")
     for algorithm, data in stats.items():
-        print(f"- {algorithm}: {data['avg_happpiness']}:.2f")
+        print(f"- {algorithm}: {data['avg_happiness']}")
     print("\nTotal Number of Sessions per Algorithm:")
     for algorithm, data in stats.items():
-        print(f"- {algorithm}: {data['avg_duration']}:.2f")
+        print(f"- {algorithm}: {data['avg_duration']}")
     print("\nAverage Session Duration per Algorithm:")
     for algorithm, data in stats.items():
-        print(f"- {algorithm}: {data['session_count']}:.2f")
+        print(f"- {algorithm}: {data['session_count']} minutes")
     print("\nHighest Average Happiness Rating:")
     for algorithm, data in stats.items():
         print(f"- {algorithm}: {data['avg_duration']}")
     print("\nHighest Average Happiness Rating:")
-    print(f"- {happiest_algorithm} with an average happiness rating of {highest_avg_happiness:.2f}")
+    print(f"- {happiest_algorithm} with an average happiness rating of {highest_avg_happiness}")
     print("\nLongest Average Session Duration:")
     for algorithm, data in stats.items():
-        print(f"- {algorithm}: {data('avg_duration')}:.2f")
+        print(f"- {longest_algorithm} with an average session duration of {longest_sesh_duration} minutes")
+
+    
 
 
     # - JoyStream: 8.50
