@@ -82,8 +82,8 @@ def main():
         longest_sesh_duration = 0
         longest_algorithm = ""
         for algorithm, data in stats.items():
-            if data['avg_duration'] > longest_sesh_duration:
-                longest_sesh_duration = data['avg_duration']
+            if data['total_duration'] > longest_sesh_duration:
+                longest_sesh_duration = data['total_duration']
                 longest_algorithm = algorithm
     # Initialize variables to keep track of the longest average duration and the corresponding algorithm
     # Loop through stats to compare avg_duration values
