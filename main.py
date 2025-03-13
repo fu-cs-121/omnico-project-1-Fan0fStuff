@@ -60,8 +60,8 @@ def main():
     #   - Calculate avg_happiness = total_happiness / session_count
         for algorithm, data in stats.items():
             if data['session_count'] > 0:
-                data['avg_happiness'] = data['total_happiness'] // data['session_count']
-                data['avg_duration'] = data['total_duration'] // data['session_count']
+                data['avg_happiness'] = data['total_happiness'] / data['session_count']
+                data['avg_duration'] = data['total_duration'] / data['session_count']
             else:
                 print("invalid numbers")
     #  V - Calculate avg_duration = total_duration / session_count 
@@ -82,8 +82,8 @@ def main():
         longest_sesh_duration = 0
         longest_algorithm = ""
         for algorithm, data in stats.items():
-            if data['total_duration'] > longest_sesh_duration:
-                longest_sesh_duration = data['total_duration']
+            if data['avg_duration'] > longest_sesh_duration:
+                longest_sesh_duration = data['avg_duration']
                 longest_algorithm = algorithm
     # Initialize variables to keep track of the longest average duration and the corresponding algorithm
     # Loop through stats to compare avg_duration values
@@ -97,15 +97,14 @@ def main():
         print(f"- {algorithm}: {data['avg_happiness']}")
     print("\nTotal Number of Sessions per Algorithm:")
     for algorithm, data in stats.items():
-        print(f"- {algorithm}: {data['avg_duration']}")
+        print(f"- {algorithm}: {data['session_count']}")
     print("\nAverage Session Duration per Algorithm:")
     for algorithm, data in stats.items():
-        print(f"- {algorithm}: {data['session_count']} minutes")
+        print(f"- {algorithm}: {data['avg_duration']} minutes")
     print("\nHighest Average Happiness Rating:")
     print(f"- {happiest_algorithm} with an average happiness rating of {highest_avg_happiness}")
     print("\nLongest Average Session Duration:")
-    for algorithm, data in stats.items():
-        print(f"- {longest_algorithm} with an average session duration of {longest_sesh_duration} minutes")
+    print(f"- {longest_algorithm} with an average session duration of {longest_sesh_duration} minutes")
 
     
 
@@ -135,3 +134,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# DANI helped me debug this code. Thank you Dani!
