@@ -12,7 +12,6 @@ Euphoria is a social platform responsible for providing unique and emotionally s
 ## Methodology
 
 When performing this task, it was important to know our averages. When typing in our code, it was important to have values for each specific variable as well as the total number of variables that existed in a group (duration, happiness). Dividing the total of values by the number of sessions gives us the average. In finding the highest of each variable, I found it important to make sure that the value was higher than the rest. I then wanted to report my findings. As algorithm was already defined, I was able to use 'data' to introduce the number from each type of variable. For every type of variable, I was able to get back the desired number.  
-[Describe the steps you took to perform the analysis, including any calculations and reasoning behind them.] 
 
 ## Results
 
@@ -39,13 +38,11 @@ When performing this task, it was important to know our averages. When typing in
   - Longest Average Session Duration: 45
 
 ## Observations and Insights
-
-The highest session duration 
-[Discuss any patterns, anomalies, or noteworthy findings from your analysis. Include any ethical considerations or unexpected results, especially related to the DeepPulse algorithm.]
+It seems that DeepPulse had the highest number of sessions, but remained on the lower side of minutes per session. JoyStream topped the session duration charts with 4 minutes per session. JoyStream also had the highest average happiness rating per algorythm. 
 
 ## Conclusions and Recommendations
+Given the data regarding the session duration and highest average happiness rating per algorhythm, JoyStream is concluded to be the most successful program. I'd like to recommend further development on JoyStream as it seems to have the most engagement as well as satisfaction from our test subjects. If you'd like to further develop another program, be sure to look at SerenityFlow which has the second highest numbers. 
 
-[Summarize your conclusions based on the results. Provide any recommendations for next steps or further analysis.]
 
 ---
 
